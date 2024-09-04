@@ -11,3 +11,8 @@ export interface MakerData {
   "VehicleTypeId": number;
   "VehicleTypeName": string;
 }
+
+export interface ModelVehicle {
+  Model_Name: string;
+  Make_Name: string;
+}

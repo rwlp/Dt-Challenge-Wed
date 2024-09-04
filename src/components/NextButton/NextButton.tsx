@@ -12,7 +12,7 @@ export default function NextButton() {
     <>
       {year && makerId ? 
         <Link
-          href={"/result/"} 
+          href={`/result/${makerId}/${year}`} 
           className=""
           >
           NEXT!

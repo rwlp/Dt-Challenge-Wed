@@ -14,7 +14,7 @@ export default function Footer(): React.ReactNode {
         href="https://github.com/rwlp/Dt-Challenge-Wed"
         aria-label="Go to GitHub Code Repository"
         >
-          <CommandLineIcon width={ICON_SIZE} height={ICON_SIZE} className="text-blue-950" />
+          <CommandLineIcon width={ICON_SIZE} height={ICON_SIZE} className="text-blue-950 dark:text-blue-200" />
       </Link>
 
       <Link 
@@ -22,15 +22,15 @@ export default function Footer(): React.ReactNode {
         href="/"
         aria-label="Go to Home"
         >
-          <HomeIcon width={ICON_SIZE} height={ICON_SIZE} className="text-blue-950" />
+          <HomeIcon width={ICON_SIZE} height={ICON_SIZE} className="text-blue-950 dark:text-blue-200" />
       </Link>
 
       <Link
-        className="w-24 h-8 flex text-center justify-center  rounded-lg hover:bg-blue-400"
+        className="w-24 h-8 flex text-center justify-center  rounded-lg hover:bg-blue-400 "
         href="#top"
         aria-label="Go to Top of Page"
         >
-        <ArrowUpCircleIcon width={ICON_SIZE} height={ICON_SIZE} className="text-blue-950" />
+        <ArrowUpCircleIcon width={ICON_SIZE} height={ICON_SIZE} className="text-blue-950 dark:text-blue-200" />
       </Link>
     </footer>
   );
