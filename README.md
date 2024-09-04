@@ -23,4 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
  ## Third Commit Notes
   - We use redux tookit for global context to management. The search paramans choiced by user (makerId and Year selected) are globaly accessible. 
-  - 
+
+## Fourth Commit Notes
+  -All functional code is finished, some UX improvments is needed. 

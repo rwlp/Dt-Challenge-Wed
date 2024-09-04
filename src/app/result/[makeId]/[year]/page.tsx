@@ -1,4 +1,5 @@
 import CarList from "@/components/CarList/CarList";
+import getMakers from "@/services/getMaker";
 import { MakerData } from "@/utils/types";
 
 interface ResultParams {
@@ -7,9 +8,7 @@ interface ResultParams {
 }
 
 export async function generateStaticParams() {
-  const response = await fetch('https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json');
-  const data = await response.json();
-  const makes = data.Results;
+  const makes = await getMakers();
 
   const years = Array.from({ length: 2024 - 2015 + 1 }, (_, i) => 2015 + i);
 
@@ -30,7 +29,6 @@ const Result: React.FC<{ params: ResultParams }> = ({ params }) => {
     <>
       <CarList year={year} makeId={makeId}/>
     </>
-      
   )
 };
 
