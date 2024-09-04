@@ -15,3 +15,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - In the requirements is described "Fetch vehicle types using the endpoint" but the API returns only one VehicleTypeName equals to Passenger Car for the all data fetched. 
   - I think that can be good to ask more details to the client, but let's make the most flexible components as possible.
 - The Result page show off all cars based on makeId and year. selected by user, so let's do generic dropdowns that works for list of years and makers as string[].
+
+## Second Commit Notes
+ - Add packages Redux, HeroIcons/React
+ - src/services is releated to client functions data functcions, not to the REST API of application, contains the logic of data tratment fetched from server to front end.
+ - configurations about theme in tailwind.config.ts we use darkMode: selector.
