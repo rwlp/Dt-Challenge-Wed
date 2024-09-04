@@ -20,3 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
  - Add packages Redux, HeroIcons/React
  - src/services is releated to client functions data functcions, not to the REST API of application, contains the logic of data tratment fetched from server to front end.
  - configurations about theme in tailwind.config.ts we use darkMode: selector.
+
+ ## Third Commit Notes
+  - We use redux tookit for global context to management. The search paramans choiced by user (makerId and Year selected) are globaly accessible. 
+  - 
